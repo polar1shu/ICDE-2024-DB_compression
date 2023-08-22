@@ -47,10 +47,10 @@ You should install PTK tool. And you should create a config file (config.yaml).
 ```yaml
 # config.yaml
 global:
-    cluster_name: mogdb1
+    cluster_name: DPTC
     user: omm
     group: omm
-    base_dir: /opt/mogdb
+    base_dir: /opt/DPTC
 db_servers:
     - host: 127.0.0.1
       db_port: 26000
