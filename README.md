@@ -37,3 +37,26 @@ for (int i = 0; i < batchSize; i++) {
 }
 ```
 
+Due to the github space limited, the database with row-level compressor need downloads from this [google drive](https://drive.google.com/file/d/1RiZ_o1Emg9D8o0QVmzCmtIMpEPhv_Cyk/view?usp=sharing).
+
+
+## How to install
+
+You should install PTK tool. And you should create a config file (config.yaml).
+
+```yaml
+# config.yaml
+global:
+    cluster_name: mogdb1
+    user: omm
+    group: omm
+    base_dir: /opt/mogdb
+db_servers:
+    - host: 127.0.0.1
+      db_port: 26000
+```
+
+After done, you execute ``ptk install -f config.yaml --pkg ./icde_DBDPTC.tar.gz``.
+
+
+
